@@ -2,10 +2,134 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio của Linh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Linh</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1f2933, #111827);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #9ca3af;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1f2937;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      border-left: 5px solid #6366f1;
+      padding-left: 12px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #374151;
+      padding: 8px 14px;
+      border-radius: 50px;
+      margin: 5px 6px 5px 0;
+      font-size: 14px;
+    }
+
+    .projects a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #818cf8;
+      text-decoration: none;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Xin chào, mình là Linh 👋</h1>
-  <p>Đây là portfolio của mình trên GitHub Pages.</p>
+  <header>
+    <h1>👋 Tôi là Linh</h1>
+    <p>Student | Developer | Learner</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        Xin chào! Mình là Linh. Mình đang học và yêu thích lập trình, công nghệ và thiết kế web.
+        Đây là portfolio đầu tiên của mình trên GitHub Pages.
+      </p>
+    </div>
+
+    <div class="card skills">
+      <h2>Skills</h2>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Python</span>
+      <span>Git</span>
+      <span>JavaScript</span>
+    </div>
+
+    <div class="card projects">
+      <h2>Projects</h2>
+      <p>🔹 Portfolio đầu tiên của mình</p>
+      <a href="https://github.com/nnlinh1911" target="_blank">Xem GitHub của mình →</a>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: your-email@gmail.com</p>
+      <p>Facebook: facebook.com/your-profile</p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Linh. All rights reserved.
+  </footer>
 </body>
 </html>
