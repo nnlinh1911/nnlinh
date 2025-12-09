@@ -1,135 +1,191 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | Linh</title>
+  <title>Linh | Portfolio</title>
 
   <style>
     * {
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
-      background: linear-gradient(135deg, #1f2933, #111827);
-      color: white;
-      min-height: 100vh;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
-    }
-
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      color: #9ca3af;
-      font-size: 18px;
+      background-color: #0f172a;
+      color: #ffffff;
+      line-height: 1.7;
     }
 
     .container {
       max-width: 900px;
-      margin: 0 auto;
+      margin: auto;
       padding: 20px;
     }
 
-    .card {
-      background: #1f2937;
-      border-radius: 20px;
+    /* Header Image */
+    .header-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 40px auto 10px;
+      border: 4px solid #6366f1;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      margin-bottom: 40px;
+    }
+
+    /* Section */
+    .section {
+      background: #020617;
       padding: 25px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
+      border-radius: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    h2 {
-      margin-bottom: 15px;
-      font-size: 24px;
+    .section h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
       border-left: 5px solid #6366f1;
       padding-left: 12px;
     }
 
-    .skills span {
-      display: inline-block;
-      background: #374151;
-      padding: 8px 14px;
-      border-radius: 50px;
-      margin: 5px 6px 5px 0;
-      font-size: 14px;
+    .section p {
+      color: #e5e7eb;
+      font-size: 15.5px;
     }
 
-    .projects a {
-      display: inline-block;
+    ul {
       margin-top: 10px;
-      color: #818cf8;
-      text-decoration: none;
+      padding-left: 20px;
     }
 
-    .projects a:hover {
-      text-decoration: underline;
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    /* Middle Image */
+    .middle-img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 20px;
+      display: block;
+      margin: 30px auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .skills-list span {
+      background: #1e293b;
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 14px;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
-      color: #9ca3af;
+      color: #94a3b8;
+      margin: 40px 0 20px;
       font-size: 14px;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>👋 Tôi là Linh</h1>
-    <p>Student | Developer | Learner</p>
-  </header>
-
   <div class="container">
 
-    <div class="card">
+    <!-- Top Image -->
+    <img src="your-photo.jpg" class="header-img" alt="My Photo" />
+
+    <h1 class="title">Nguyen Ngoc Linh</h1>
+    <p class="subtitle">International Finance Student | Aspiring Tech-Finance Professional</p>
+
+    <!-- About Me -->
+    <div class="section">
       <h2>About Me</h2>
       <p>
-        Xin chào! Mình là Linh. Mình đang học và yêu thích lập trình, công nghệ và thiết kế web.
-        Đây là portfolio đầu tiên của mình trên GitHub Pages.
+        I am Linh, a third-year undergraduate student at Foreign Trade University Hanoi, majoring in International Finance.
+        My academic interests lie in global financial systems, international capital markets, and financial decision-making in cross-border contexts. 
+        In addition to my major, I am proficient in English and have working knowledge of Chinese. 
+        I have recently developed a strong interest in programming and computer engineering, with the goal of building an interdisciplinary foundation 
+        that integrates finance and technology to address complex challenges in the modern digital economy.
       </p>
     </div>
 
-    <div class="card skills">
-      <h2>Skills</h2>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>Python</span>
-      <span>Git</span>
-      <span>JavaScript</span>
+    <!-- Middle Image -->
+    <img src="your-photo-2.jpg" class="middle-img" alt="Portfolio Image" />
+
+    <!-- Personal Information -->
+    <div class="section">
+      <h2>Personal Information</h2>
+      <p><b>Name:</b> Nguyen Ngoc Linh</p>
+      <p><b>Date of Birth:</b> 19/11/2005</p>
     </div>
 
-    <div class="card projects">
-      <h2>Projects</h2>
-      <p>🔹 Portfolio đầu tiên của mình</p>
-      <a href="https://github.com/nnlinh1911" target="_blank">Xem GitHub của mình →</a>
-    </div>
-
-    <div class="card">
+    <!-- Contact -->
+    <div class="section">
       <h2>Contact</h2>
-      <p>Email: your-email@gmail.com</p>
-      <p>Facebook: facebook.com/your-profile</p>
+      <p><b>Email:</b> k62.2311310077@ftu.edu.vn</p>
     </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <p><b>University:</b> Foreign Trade University – Ha Noi</p>
+      <p><b>Major:</b> International Finance</p>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <b>Sales Staff – Uni English Center:</b> Developed client communication skills, course consulting expertise, and customer relationship management through direct interaction with students and parents.
+        </li>
+        <li>
+          <b>Teaching Assistant – Luna English Center:</b> Supported classroom activities, assisted in lesson delivery, and improved students’ learning outcomes through academic guidance.
+        </li>
+        <li>
+          <b>Private English Tutor (1–1):</b> Designed personalized learning plans and delivered tailored instruction to enhance learners’ language proficiency.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>Teamwork</span>
+        <span>Creativity</span>
+        <span>Critical Thinking</span>
+        <span>Leadership</span>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Nguyen Ngoc Linh | Portfolio Website
+    </footer>
 
   </div>
-
-  <footer>
-    © 2025 Linh. All rights reserved.
-  </footer>
 </body>
 </html>
